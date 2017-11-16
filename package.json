@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/oscarsanabria28/enseres/issues"
   },
-  "homepage": "https://github.com/oscarsanabria28/enseres#readme"
+  "homepage": "https://github.com/oscarsanabria28/enseres#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }

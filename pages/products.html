@@ -25,6 +25,13 @@
 </head><!--/head-->
 
 <body>
+
+<script>
+	var carrito = storage.getItem(pedido);
+	console.log(carrito);
+</script>
+
+
 	<header id="header" style="margin-top: 27px;"><!--header-->
 		
 		
@@ -59,7 +66,7 @@
 								<li><a href="products.html" class="active">P R O D U C T S</a></li>
 								<li><a href="about-us.html">A B O U T</a></li>
 								<li><a href="contact-us.html">C O N T A C T</a></li>
-								<li ><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+								<li ><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -90,7 +97,7 @@
 									<p>Ideal para oficinas pequeñas sustituyendo los estantes tradicionales para optimizar el espacio.</p>
 
 									<h3><small><del>$3,500.00 mxn</del></small> $3,325.00 mxn</h3>
-									<button type="button" class="btn btn-default get">Añadir al carrito</button>
+									<button onclick="agregarAlCarro(6)" type="button" class="btn btn-default get">Añadir al carrito</button>
 								</div>
 								<div class="col-sm-6">
 									<img src="images/home/mueble1.png" class="girl img-responsive" alt="" />
@@ -105,7 +112,7 @@
 										Tela de Velur tejida en color gris.</h2>
 									<p>Ideal para lugares de relajación que carecen de espacio.</p>
 									<h3><small><del>$4,500.00 mxn</del></small> $4,050.00 mxn</h3>
-									<button type="button" class="btn btn-default get">Añadir al carrito</button>
+									<button onclick="agregarAlCarro(7)" type="button" class="btn btn-default get">Añadir al carrito</button>
 								</div>
 								<div class="col-sm-6">
 									<img src="images/home/product2.jpg" class="girl img-responsive" alt="" />
@@ -118,7 +125,7 @@
 										(cerrado: 1.7x0.5x1.3)</h2>
 									<p>Ideal para espacios que busquen promover la creatividad.</p>
 									<h3><small><del>$1,500.00 mxn</del></small> $1,275.00 mxn</h3>
-									<button type="button" class="btn btn-default get">Añadir al carrito</button>
+									<button onclick="agregarAlCarro(8)" type="button" class="btn btn-default get">Añadir al carrito</button>
 								</div>
 								<div class="col-sm-6">
 									<img src="images/home/product3.jpg" class="girl img-responsive" alt="" />
@@ -132,7 +139,7 @@
 									(cerrada:1.36x0.59x0.87)</h2>
 									<p>Ideal para aumentar la capacidad de trabajo en espacios reducidos de forma espontánea.</p>
 									<h3><small><del>$4,850.00 mxn</del></small> $4,122.50 mxn</h3>
-									<button type="button" class="btn btn-default get">Añadir al carrito</button>
+									<button onclick="agregarAlCarro(9)" type="button" class="btn btn-default get">Añadir al carrito</button>
 								</div>
 								<div class="col-sm-6">
 									<img src="images/home/product8.jpg" class="girl img-responsive" alt="" />
@@ -178,7 +185,7 @@
 											<div class="overlay-content">
 												<h2>$5,499.00</h2>
 												<p>Ideal para lugares de relajación que carecen de espacios para estanterías y mesas de centro.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(0)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -203,7 +210,7 @@
 											<div class="overlay-content">
 												<h2>$9,999.00</h2>
 												<p>Ideal para oficinas que desean promover una cultura de trabajo y relajación.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(1)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -225,7 +232,7 @@
 											<div class="overlay-content">
 												<h2>$1,500.00</h2>
 												<p>Ideal para espacios que busquen promover la creatividad.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(2)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -250,7 +257,7 @@
 											<div class="overlay-content">
 												<h2>$2,499.00</h2>
 												<p>Ideal para aumentar la capacidad de trabajo en espacios reducidos de forma espontánea.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(3)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -274,7 +281,7 @@
 											<div class="overlay-content">
 												<h2>$3,999.00</h2>
 												<p>Ideal para oficinas que desean promover una cultura de trabajo y relajación.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(4)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -296,7 +303,7 @@
 											<div class="overlay-content">
 												<h2>$3,750.00</h2>
 												<p>Ideal para lugares de trabajo al optimizar el espacio a gusto del usuario.</p>
-												<a href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
+												<a onclick="agregarAlCarro(5)" href="#" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</a>
 											</div>
 										</div>
 									</div>
@@ -330,5 +337,7 @@
 	<script src="js/price-range.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
     <script src="js/main.js"></script>
+	<script src="js/agregarCarrito.js"></script>
+	
 </body>
 </html>

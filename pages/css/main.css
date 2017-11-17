@@ -728,7 +728,7 @@ ul.sub-menu {
 .left-sidebar h2:after, h2.title:after{
 	content: " ";
 	position: absolute;
-	border: 1px solid #f5f5f5;
+	border: 1px solid white;
 	bottom:8px;
 	left: 0;
 	width: 100%;
@@ -751,7 +751,7 @@ ul.sub-menu {
 h2.title:before{
 	content: " ";
 	position: absolute;
-	background: #fff;
+	background: #3e3d4d;
 	bottom: -6px;
 	width: 220px;
 	height: 30px;
@@ -893,7 +893,7 @@ h2.title:before{
 }
 
 h2.title {
-  color: #FE980F;
+  color: #ae8988;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -937,7 +937,7 @@ h2.title {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #696763;
+  color: #E2DBCF;
 }
 
 .productinfo img{
@@ -949,7 +949,7 @@ h2.title {
 }
 
 .product-overlay {
-  background:#FE980F;
+  background:#ae8988;
   top: 0;
   display: none;
   height: 0;
@@ -957,7 +957,7 @@ h2.title {
   transition: height 500ms ease 0s;
   width: 100%;
   display: block;
-  opacity:0.4;
+  opacity:0.9;
 }
 
 .single-products:hover .product-overlay {
@@ -976,9 +976,10 @@ h2.title {
 
 .product-overlay .add-to-cart {
   background:#fff;
+  opacity: 0.7;
   border: 0 none;
   border-radius: 0;
-  color: #FE980F;
+  color: #ae8988;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
@@ -986,7 +987,8 @@ h2.title {
 
 .product-overlay .add-to-cart:hover {
   background:#fff;
-  color: #FE980F;
+  color: #ae8988;
+  opacity: 1;
 }
 
 
@@ -1010,7 +1012,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #FE980F;
+  background: #ae8988;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1025,7 +1027,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #FE980F;
+  background: #ae8988;
   color: #FFFFFF;
 }
 
@@ -2518,13 +2520,14 @@ h2.title {
 #main-contact-form .btn-primary {
   margin-bottom: 15px;
   margin-top: 20px;
+  background-color: #ae8988;
 }
 
 
 #contact-page .form-control:focus, 
 #contact-page .form-control:hover {
   box-shadow: inherit;
-  border-color: #FDB45E;
+  border-color: #ae8988;
 }
 
 #contact-page .contact-info {
@@ -2538,7 +2541,7 @@ h2.title {
 
 #contact-page .contact-info p {
   margin-bottom: 0;
-  color: #696763;
+  color: white;
   font-size: 16px;
   line-height: 25px;
 }
@@ -2575,7 +2578,7 @@ h2.title {
 }
 
 .contact-info .social-networks ul li a:hover{
-  color: #FE980F;
+  color: #ae8988;
 }
 
 

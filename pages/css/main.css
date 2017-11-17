@@ -1624,6 +1624,18 @@ h2.title {
   margin-top: 70px;
 }
 
+.jiji{
+  font-family: 'Roboto', sans-serif;
+  color: #E2DBCF;
+  font-size: 17px;
+}
+
+.titleCart{
+  font-family: 'Roboto', sans-serif;
+  color: #E2DBCF;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
 
 #cart_items .cart_info .cart_menu {
   background: #FE980F;

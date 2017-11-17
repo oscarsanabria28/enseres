@@ -1,5 +1,5 @@
 var pedido=[];
-var muebles=[['Sillón con estantería Cojines de tela futón',5499],['Sillón con escritorio Madera de cataño',9999],['Estanteria con escritorio plegable',1500],['Archivero con mesa plegable',2499],['Sillón multiusos ',3999],['Archivero con mesa escondida',3750],['Sillón con estanteria y lámpara',3325],['Sillón con mesa de centro guardable',4050],['Estantería con escritorio plegable',1275],['Archivero con sillas escondidas',4122.50]];
+var muebles=[['Sillón con estantería Cojines de tela futón','5499'],['Sillón con escritorio Madera de cataño','9999'],['Estanteria con escritorio plegable','1500'],['Archivero con mesa plegable','2499'],['Sillón multiusos ','3999'],['Archivero con mesa escondida','3750'],['Sillón con estanteria y lámpara','3325'],['Sillón con mesa de centro guardable','4050'],['Estantería con escritorio plegable','1275'],['Archivero con sillas escondidas','4122.50']];
 		
 var myJSON = JSON.stringify(pedido);
 				
@@ -21,6 +21,20 @@ function agregarAlCarro(indice)
 				
 
 				}							
+}
+
+function buscar(	){
+		var array = JSON.parse("[" + carrito + "]");
+		for(var i=0; i<array.length;i++){
+			console.log("carrito: "+array[i])
+			 var prod =array[i];
+			 console.log(prod)
+			 var mueb=muebles[prod];
+			 
+			 
+			 console.log("name: "+muebles[prod][0]+" apellido: "+muebles[prod][1]);
+		}
+		
 }
 
 

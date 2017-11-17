@@ -11,6 +11,22 @@ body {
   background:#3e3d4d;
   position: relative;
   font-weight:400px;
+   animation: mainscreen 3s linear;
+}
+
+@-webkit-keyframes mainscreen {
+   0%  {background-color: #E2DBCF} 
+    25% {background-color: #BFB3AE} 
+    50% {background-color: #999689} 
+    75% {background-color: #4B3646}
+}
+
+@keyframes mainscreen {
+    
+     0%  {background-color: #E2DBCF} 
+    25% {background-color: #BFB3AE} 
+    50% {background-color: #999689} 
+    75% {background-color: #4B3646}
 }
 
 ul li {
@@ -219,14 +235,19 @@ a#scrollUp i{
 	background:#3e3d4d;
 }
 
+#logo-section{
+  margin-top: 60px;
+  padding-bottom: 15px;
+}
 
 .header-bottom {
-  padding-bottom: 30px;
-  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  margin-bottom: 0px;
 }
 
 .navbar-collapse.collapse{
-  padding-left: 0;
+  /*padding-left: 0;*/
 }
 
 .mainmenu ul li{
@@ -235,14 +256,14 @@ a#scrollUp i{
 }
 
 .mainmenu ul li:first-child{
-  padding-left: 0px;
+ 
 }
 
 .mainmenu ul li a {
 	color: #696763;
 	font-family: 'Roboto', sans-serif;
   margin-top: 0px;
-	font-size: 13px;
+	font-size: 11px;
 	font-weight: 300;
 	padding-left: 50px;
 	padding-bottom: 10px;
@@ -250,7 +271,7 @@ a#scrollUp i{
 
 .mainmenu ul li a:hover, .mainmenu ul li a.active,  .shop-menu ul li a.active{
 	background:none;
-	color:#fdb45e;
+	color:#E2DBCF;
 }
 
 .search_box input {
@@ -284,6 +305,22 @@ a#scrollUp i{
   -ms-animation: fadeInUp 400ms;
   -o-animation: fadeInUp 400ms;
   animation: fadeInUp 400ms;
+}
+
+.lista ul
+{
+   padding-right: 0px;
+   padding-left: 0px;
+   padding-bottom: 0px;
+   padding-top: 0px;
+   margin: 0px;
+}
+
+.lista li
+{
+   list-style-type: none;
+   display: inline;
+   padding-right: 5px;
 }
 
 ul.sub-menu {
@@ -347,6 +384,14 @@ ul.sub-menu {
 
 #footer {
   background: #F0F0E9;
+  position: fixed;
+    height: 35px;
+    bottom: 0;
+    width: 100%;
+}
+
+.copyright{
+  font-size: 10px;
 }
 
 
@@ -569,6 +614,7 @@ ul.sub-menu {
 
 
 #slider {
+  margin-top: 70px;
   padding-bottom: 45px;
 }
 
@@ -577,7 +623,7 @@ ul.sub-menu {
 }
 
 .carousel-indicators li.active {
-	  background: #FE980F;
+	  background: #ae8988;
 }
 
 .item {
@@ -599,31 +645,39 @@ ul.sub-menu {
   color: #B4B1AB;
   font-family: abel;
   font-size: 48px;
+  font-weight: 300;
   margin-top: 115px;
 }
 
 .item h1 span {
-	color:#FE980F;
+	color:#ae8988;
+  font-weight: 300;
 }
 
 .item h2 {
-  color: #363432;
+  color: #E2DBCF;
   font-family: 'Roboto', sans-serif;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 22px;
   margin-top: 10px;
 }
 
+.item h3 {
+  color: #E2DBCF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 .item  p {
-	color:#363432;
+	color:#ae8988;
 	font-size:16px;
 	font-weight:300;
 	font-family: 'Roboto', sans-serif;
 }
 
 .get {
-  background: #FE980F;
+  background: #B4B1AB;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -635,7 +689,7 @@ ul.sub-menu {
 
 
 .item button:hover {
-  background: #FE980F;
+  background: #B4B1AB;
 }
 
 .control-carousel {
@@ -646,7 +700,7 @@ ul.sub-menu {
 }
 
 .control-carousel:hover{
-  color: #FE980F ;
+  color: #ae8988 ;
 }
 
 .right {
@@ -807,7 +861,7 @@ h2.title:before{
 
 
 .tooltip-inner {
-  background-color: #FE980F;
+  background-color: #B4B1AB;
   border-radius: 4px;
   color: #FFFFFF;
   max-width: 200px;
@@ -817,7 +871,7 @@ h2.title:before{
 }
 
 .tooltip.top .tooltip-arrow {
-  border-top-color: #FE980F;
+  border-top-color: #B4B1AB;
   border-width: 5px 5px 0;
   bottom: 0;
   left: 50%;
@@ -830,9 +884,13 @@ h2.title:before{
 }
 
 .features_items{
+   margin-top: 30px;
 	overflow:hidden;
 }
 
+.section_products{
+  width: 80%;
+}
 
 h2.title {
   color: #FE980F;
@@ -846,7 +904,7 @@ h2.title {
 }
 
 .product-image-wrapper{
-	border:1px solid #F7F7F5;
+
 	overflow: hidden;
 	margin-bottom:30px;
 }
@@ -862,7 +920,7 @@ h2.title {
 }
 
 .productinfo h2{
-	color: #FE980F;
+	color: #ae8988;
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;

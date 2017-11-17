@@ -623,7 +623,7 @@ ul.sub-menu {
 }
 
 .carousel-indicators li.active {
-	  background: #ae8988;
+	  background: #B4B1AB;
 }
 
 .item {
@@ -650,7 +650,7 @@ ul.sub-menu {
 }
 
 .item h1 span {
-	color:#ae8988;
+	color:#B4B1AB;
   font-weight: 300;
 }
 
@@ -670,7 +670,7 @@ ul.sub-menu {
 }
 
 .item  p {
-	color:#ae8988;
+	color:#B4B1AB;
 	font-size:16px;
 	font-weight:300;
 	font-family: 'Roboto', sans-serif;
@@ -700,7 +700,7 @@ ul.sub-menu {
 }
 
 .control-carousel:hover{
-  color: #ae8988 ;
+  color: #B4B1AB ;
 }
 
 .right {
@@ -893,7 +893,7 @@ h2.title:before{
 }
 
 h2.title {
-  color: #ae8988;
+  color: #B4B1AB;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -920,7 +920,7 @@ h2.title {
 }
 
 .productinfo h2{
-	color: #ae8988;
+	color: #B4B1AB;
 	font-family: 'Roboto', sans-serif;
 	font-size: 24px;
 	font-weight: 700;
@@ -949,7 +949,7 @@ h2.title {
 }
 
 .product-overlay {
-  background:#ae8988;
+  background:#B4B1AB;
   top: 0;
   display: none;
   height: 0;
@@ -979,7 +979,7 @@ h2.title {
   opacity: 0.7;
   border: 0 none;
   border-radius: 0;
-  color: #ae8988;
+  color: #B4B1AB;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   margin-bottom: 25px;
@@ -987,7 +987,7 @@ h2.title {
 
 .product-overlay .add-to-cart:hover {
   background:#fff;
-  color: #ae8988;
+  color: #B4B1AB;
   opacity: 1;
 }
 
@@ -1012,7 +1012,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #ae8988;
+  background: #B4B1AB;
   border: 0 none;
   border-radius: 0;
   color: #FFFFFF;
@@ -1027,7 +1027,7 @@ h2.title {
 }
 
 .add-to-cart:hover {
-  background: #ae8988;
+  background: #B4B1AB;
   color: #FFFFFF;
 }
 
@@ -2532,14 +2532,14 @@ h2.title {
 #main-contact-form .btn-primary {
   margin-bottom: 15px;
   margin-top: 20px;
-  background-color: #ae8988;
+  background-color: #B4B1AB;
 }
 
 
 #contact-page .form-control:focus, 
 #contact-page .form-control:hover {
   box-shadow: inherit;
-  border-color: #ae8988;
+  border-color: #B4B1AB;
 }
 
 #contact-page .contact-info {
@@ -2590,7 +2590,7 @@ h2.title {
 }
 
 .contact-info .social-networks ul li a:hover{
-  color: #ae8988;
+  color: #B4B1AB;
 }
 
 .button4 {border-radius: 8px;

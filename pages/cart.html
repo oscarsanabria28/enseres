@@ -85,9 +85,9 @@
 	</header><!--/header-->
 
 	<section id="cart_items">
-		<div class="container">
+		<div class="container" id="jeje" style="margin-top: 70px;">
 
-			<div class="row" style="margin-top: 70px;">
+			<div class="row" >
 				<div class="col-sm-3 col-sm-offset-3" align="center">
 					Nombre
 				</div>
@@ -96,22 +96,26 @@
 				</div>
 			</div>
 
+			<div id="productss" align="center">
+
+			</div>
+
 			<div class="row" style="margin-top: 70px;">
 				<div class="col-sm-3 col-sm-offset-4" align="center">
-					Total <span id="total_cart"></span>
+					Total: <span id="total_cart"></span>
 				</div>
 
 			</div>
 		</div>
 	</section> <!--/#cart_items-->
 
-	<section id="do_action">
-		<div class="container">
+	<section id="do_action" >
+		<div class="container" align="center">
 			<div class="heading">
 				<h3>Transaccion</h3>
 			</div>
-				<div class="col-sm-6">
-					<div class="total_area">
+				<div class="col-sm-6"  align="center">
+					<div class="total_area" align="center">
 						<ul>
 							<li>Total</li>
 							
@@ -123,7 +127,7 @@
 						<input type="hidden" name="business" value="A01182992@itesm.mx">
 						<input type="hidden" name="lc" value="AL">
 						<input type="hidden" name="item_name" value="Total">
-						<input type="hidden" name="amount" value="100.00">
+						<input type="hidden" id="totalPaypal" name="amount" value="100.00">
 						<input type="hidden" name="currency_code" value="MXN">
 						<input type="hidden" name="button_subtype" value="services">
 						<input type="hidden" name="no_note" value="0">
